@@ -186,5 +186,5 @@ var runtest = function()
 }
 var exportresult = function()
 {  
-	document.getElementById("Output").innerHTML = customFormat
+	document.getElementById("Output").innerHTML = "customFormat"
 }
