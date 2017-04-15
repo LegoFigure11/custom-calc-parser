@@ -182,8 +182,8 @@ var savecustom = function()
 			}
 			if(lines[i].indexOf("- ") != -1){ //if there is a move in this line
 				var nextMove = lines[i].substring(lines[i].indexOf(' ') + 1).trim()
-				nextMove = nextMove.replace('[', 'memes')
-				nextMove = nextMove.replace(']', '\n')
+				nextMove = nextMove.replace('[', '')
+				nextMove = nextMove.replace(']', '')
 				moves.push(nextMove)
 			}
 
