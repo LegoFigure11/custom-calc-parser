@@ -84,7 +84,7 @@ var savecustom = function()
 	var lnen = '", \n'
 	var ln20p1 = '      "ability": "'
 	var ln21p1 = '      "item": "'
-	var ln22 = '      "moves": ['
+	var ln22 = '      "moves": [ /n'
 	
 
 	/*	Pokemon Showdown Export Format
@@ -181,7 +181,7 @@ var savecustom = function()
 			}
 			if(lines[i].indexOf("- ") != -1){ //if there is a move in this line
 				var nextMove = lines[i].substring(lines[i].indexOf(' ') + 1).trim()
-				nextMove = nextMove.replace('[', '')
+				nextMove = nextMove.replace('[', 'memes')
 				nextMove = nextMove.replace(']', '')
 				moves.push(nextMove)
 			}
