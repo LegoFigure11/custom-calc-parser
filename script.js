@@ -78,8 +78,9 @@ var savecustom = function()
 	var ln8p1 = '              "sa": '
 	var ln9p1 = '              "sd": '
 	var ln10p1 = '              "se": '
+	var ln12p1 = '      "ivs": { \n'
 	var ln11 = '      }, \n'
-	var ln12p1 = '      "nature": "'
+	var ln19p1 = '      "nature": "'
 	var lnen = '", \n'
 	
 
@@ -241,8 +242,14 @@ var savecustom = function()
 		var ln8p2 = EVs[3]
 		var ln9p2 = EVs[4]
 		var ln10p2 = EVs[5]
+		var ln12p2 = IVs[0]
+		var ln13p2 = IVs[1]
+		var ln14p2 = IVs[2]
+		var ln15p2 = IVs[3]
+		var ln16p2 = IVs[4]
+		var ln17p2 = IVs[5]
 		
-	var res = ln1p1.concat(species, ln1p2, ln2, ln3, ln4, ln5p1, ln5p2, lnbr, ln6p1, ln6p2, lnbr, ln7p1, ln7p2, lnbr, ln8p1, ln8p2, lnbr, ln9p1, ln9p2, lnbr, ln10p1, ln10p2, lnbr, ln11, ln12p1, nature, lnen);
+	var res = ln1p1.concat(species, ln1p2, ln2, ln3, ln4, ln5p1, ln5p2, lnbr, ln6p1, ln6p2, lnbr, ln7p1, ln7p2, lnbr, ln8p1, ln8p2, lnbr, ln9p1, ln9p2, lnbr, ln10p1, ln10p2, lnbr, ln11, ln5p1, ln12p2, lnbr, ln6p1, ln13p2, lnbr, ln7p1, ln14p2, lnbr, ln8p1, ln15p2, lnbr, ln9p1, ln16p2, lnbr, ln10p1, ln17p2, lnbr, ln11, ln19p1, nature, lnen);
   	if(SETDEX_CUSTOM[species] == null)
   		SETDEX_CUSTOM[species] = {}
   	SETDEX_CUSTOM[species]= customFormat
