@@ -71,8 +71,7 @@ var savecustom = function()
 	var ln2 = '    "Set Name": { \n'
 	var ln3 = '      "level": 50, \n'
 	var ln4 = '      "evs": { \n'
-	var ln5p1 = '  				"hp": '
-	var ln5p2 = EVs[0]
+	var ln5p1 = '  		   "hp": '
 	var ln5p3 = '\n'
 
 	/*	Pokemon Showdown Export Format
@@ -227,6 +226,7 @@ var savecustom = function()
   			"item": item,
   			"moves": moves,
   		}
+		var ln5p2 = EVs[0]
 	var res = ln1p1.concat(species, ln1p2, ln2, ln3, ln4, ln5p1, ln5p1, ln5p3);
   	if(SETDEX_CUSTOM[species] == null)
   		SETDEX_CUSTOM[species] = {}
