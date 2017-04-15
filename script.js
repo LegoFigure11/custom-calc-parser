@@ -71,8 +71,14 @@ var savecustom = function()
 	var ln2 = '    "Set Name": { \n'
 	var ln3 = '      "level": 50, \n'
 	var ln4 = '      "evs": { \n'
-	var ln5p1 = '  		   "hp": '
-	var ln5p3 = '\n'
+	var ln5p1 = '              "hp": '
+	var lnbr = '\n'
+	var ln6p1 = '              "at": '
+	var ln7p1 = '              "df": '
+	var ln8p1 = '              "sa": '
+	var ln9p1 = '              "sd": '
+	var ln10p1 = '              "se": '
+	
 
 	/*	Pokemon Showdown Export Format
 0	Nickname (Species) @ Item
@@ -232,9 +238,8 @@ var savecustom = function()
 		var ln8p2 = EVs[3]
 		var ln9p2 = EVs[4]
 		var ln10p2 = EVs[5]
-		var ln11p2 = EVs[6]
 		
-	var res = ln1p1.concat(species, ln1p2, ln2, ln3, ln4, ln5p1, ln5p2, ln5p3);
+	var res = ln1p1.concat(species, ln1p2, ln2, ln3, ln4, ln5p1, ln5p2, lnbr, ln6p1, ln6p2, lnbr, ln7p1, ln7p2, lnbr, ln8p1, ln8p2, lnbr, ln9p1, ln9p2, lnbr, ln10p1, ln10p2, lnbr);
   	if(SETDEX_CUSTOM[species] == null)
   		SETDEX_CUSTOM[species] = {}
   	SETDEX_CUSTOM[species]= customFormat
