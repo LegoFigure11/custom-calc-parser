@@ -19,6 +19,7 @@ var showdownFormes = [["Kyurem-White", "Kyurem-W"],
 
 var string = document.getElementById('customMon').value
 var lines = string.split('\n')
+var species = "";
 
 var runtest = function()
 {
@@ -216,5 +217,5 @@ var exportresult = function()
 			species = showdownFormes[i][1]
 	}
 	}
-	document.getElementById("Output").innerHTML = monname
+	document.getElementById("Output").innerHTML = species
 }
