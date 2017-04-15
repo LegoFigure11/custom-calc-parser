@@ -66,8 +66,11 @@ var savecustom = function()
 	var IVs = [31,31,31,31,31,31]
 	var nature = "Serious"
 	var moves = []
-	var ln1 = '"'
+	var ln1 = '  "'
 	var ln1p2 = '" { \n'
+	var ln2 = '    "Common Showdown": { \n'
+	var ln3 = '      "level": 50, \n'
+	var ln4 = '      "evs": { \n'
 
 	/*	Pokemon Showdown Export Format
 0	Nickname (Species) @ Item
@@ -221,7 +224,7 @@ var savecustom = function()
   			"item": item,
   			"moves": moves,
   		}
-	var res = ln1.concat(species, ln1p2);
+	var res = ln1.concat(species, ln1p2, ln2, ln3, ln4);
   	if(SETDEX_CUSTOM[species] == null)
   		SETDEX_CUSTOM[species] = {}
   	SETDEX_CUSTOM[species]= customFormat
