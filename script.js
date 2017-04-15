@@ -1,3 +1,22 @@
+var showdownFormes = [["Kyurem-White", "Kyurem-W"],
+["Kyurem-Black", "Kyurem-B"],
+["Rotom-Wash", "Rotom-W"],
+["Rotom-Heat", "Rotom-H"],
+["Rotom-Frost", "Rotom-F"],
+["Rotom-Mow", "Rotom-C"],
+["Rotom-Fan", "Rotom-S"],
+["Giratina-Origin", "Giratina-O"],
+["Landorus-Therian", "Landorus-T"],
+["Thundurus-Therian", "Thundurus-T"],
+["Tornadus-Therian", "Tornadus-T"],
+["Floette-Eternal", "Floette-E"],
+["Pumpkaboo", "Pumpkaboo-Average"],
+["Gourgeist", "Gourgeist-Average"],
+["Wormadan-Sandy", "Wormadan-G"],
+["Wormadan-Trash", "Wormadan-S"],
+["Groudon-Primal", "Groudon"],
+["Kyogre-Primal", "Kyogre"]];
+
 var runtest = function()
 {
 	//first, to parse it all from the PS format
