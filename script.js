@@ -160,7 +160,7 @@ var runtest = function()
   */
 
   	
-  	customFormat = {
+  	var customFormat = {
   			"level": level, 
   			"evs": {
   				"hp": EVs[0],
