@@ -17,6 +17,8 @@ var showdownFormes = [["Kyurem-White", "Kyurem-W"],
 ["Groudon-Primal", "Groudon"],
 ["Kyogre-Primal", "Kyogre"]];
 
+var lines = string.split('\n')
+
 var runtest = function()
 {
 	//first, to parse it all from the PS format
