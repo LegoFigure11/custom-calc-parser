@@ -216,6 +216,6 @@ var exportresult = function()
 			species = showdownFormes[i][1]
 	}
 	}
-	document.getElementById("Output").innerHTML = monname
+	document.getElementById("Output").innerHTML = "monname"
 	document.getElementById("Output").innerHTML = "customFormat"
 }
