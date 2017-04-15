@@ -17,6 +17,7 @@ var showdownFormes = [["Kyurem-White", "Kyurem-W"],
 ["Groudon-Primal", "Groudon"],
 ["Kyogre-Primal", "Kyogre"]];
 
+var string = document.getElementById('customMon').value
 var lines = string.split('\n')
 
 var runtest = function()
