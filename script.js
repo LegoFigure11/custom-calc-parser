@@ -183,5 +183,8 @@ var runtest = function()
   			"item": item,
   			"moves": moves,
     }
-  document.getElementById("Output").innerHTML = customFormat
+}
+var exportresult = function()
+{  
+	document.getElementById("Output").innerHTML = customFormat
 }
