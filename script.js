@@ -217,5 +217,4 @@ var exportresult = function()
 	}
 	}
 	document.getElementById("Output").innerHTML = "testestest \n"
-	document.getElementById("Output").innerHTML = "customFormat"
 }
