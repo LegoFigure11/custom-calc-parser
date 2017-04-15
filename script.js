@@ -221,7 +221,7 @@ var savecustom = function()
   	if(SETDEX_CUSTOM[species] == null)
   		SETDEX_CUSTOM[species] = {}
   	SETDEX_CUSTOM[species]= customFormat
-    document.getElementById("Output").innerHTML = customFormat
+    document.getElementById("Output").innerHTML = SETDEX_CUSTOM
 
 
 }
