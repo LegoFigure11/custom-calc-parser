@@ -1,4 +1,5 @@
 var SETDEX_CUSTOM = {};
+
 var showdownFormes = [["Kyurem-White", "Kyurem-W"],
 ["Kyurem-Black", "Kyurem-B"],
 ["Rotom-Wash", "Rotom-W"],
@@ -65,6 +66,8 @@ var savecustom = function()
 	var IVs = [31,31,31,31,31,31]
 	var nature = "Serious"
 	var moves = []
+	var ln1 = '"'
+	var ln1p2 = '" { \n'
 
 	/*	Pokemon Showdown Export Format
 0	Nickname (Species) @ Item
@@ -218,10 +221,11 @@ var savecustom = function()
   			"item": item,
   			"moves": moves,
   		}
+	var res = ln1.concat(species, ln1p2);
   	if(SETDEX_CUSTOM[species] == null)
   		SETDEX_CUSTOM[species] = {}
   	SETDEX_CUSTOM[species]= customFormat
-    document.getElementById("Output").innerHTML = species
+    document.getElementById("Output").innerHTML = res
 
 
 }
