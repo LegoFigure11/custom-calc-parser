@@ -186,5 +186,33 @@ var runtest = function()
 }
 var exportresult = function()
 {  
+	var monname 
+	{
+		//geting rid of gender identities (lel)
+	if(lines[0].indexOf('(M)') != -1)
+	{
+		lines[0] = lines[0].substring(0, lines[0].indexOf('(M)') - 1) + 
+		lines[0].substring(lines[0].indexOf('(M)') + 3, lines[0].length);
+	}
+	else if(lines[0].indexOf('(F)') != -1)
+	{
+		lines[0] = lines[0].substring(0, lines[0].indexOf('(F)')) + 
+		lines[0].substring(lines[0].indexOf('(F)') + 3, lines[0].length);
+	}
+	if(lines[0].indexOf('(') != -1)
+	{
+		firstParenth = lines[0].lastIndexOf('(');
+		lastParenth = lines[0].lastIndexOf(')');
+		species = lines[0].substring(firstParenth + 1, lastParenth).trim();
+	}
+	else
+		species = lines[0].split('@')[0].trim(); //species is always first
+	for(var i = 0; i < showdownFormes.length; ++i)
+	{
+		if(species == showdownFormes[i][0])
+			species = showdownFormes[i][1]
+	}
+	}
+	document.getElementById("Output").innerHTML = monname
 	document.getElementById("Output").innerHTML = "customFormat"
 }
