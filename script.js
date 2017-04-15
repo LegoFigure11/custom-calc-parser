@@ -185,7 +185,7 @@ var savecustom = function()
 				nextMove = nextMove.replace('[', '')
 				nextMove = nextMove.replace(']', '')
 				moves.push(nextMove)
-			}
+			
 			if(lines[i].indexOf("- ") != -1){ //if there is a move in this line
 				var move1 = lines[i].substring(lines[i].indexOf(' ') + 1).trim()
 				move1 = move1.replace('[', '')
