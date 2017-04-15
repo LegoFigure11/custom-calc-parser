@@ -227,7 +227,14 @@ var savecustom = function()
   			"moves": moves,
   		}
 		var ln5p2 = EVs[0]
-	var res = ln1p1.concat(species, ln1p2, ln2, ln3, ln4, ln5p1, ln5p1, ln5p3);
+		var ln6p2 = EVs[1]
+		var ln7p2 = EVs[2]
+		var ln8p2 = EVs[3]
+		var ln9p2 = EVs[4]
+		var ln10p2 = EVs[5]
+		var ln11p2 = EVs[6]
+		
+	var res = ln1p1.concat(species, ln1p2, ln2, ln3, ln4, ln5p1, ln5p2, ln5p3);
   	if(SETDEX_CUSTOM[species] == null)
   		SETDEX_CUSTOM[species] = {}
   	SETDEX_CUSTOM[species]= customFormat
