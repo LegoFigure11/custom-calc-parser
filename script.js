@@ -18,40 +18,6 @@ var showdownFormes = [["Kyurem-White", "Kyurem-W"],
 ["Wormadan-Trash", "Wormadan-S"],
 ["Groudon-Primal", "Groudon"],
 ["Kyogre-Primal", "Kyogre"]];
-if(readCookie("custom") != null){
-	var SETDEX_CUSTOM = JSON.parse(readCookie("custom"))
-}
-var deletecustom = function()
-{
-	SETDEX_CUSTOM = {}
-	eraseCookie("custom")
-    reloadXYScript()
-}
-
-function createCookie(name,value,days) {
-	if (days) {
-		var date = new Date();
-		date.setTime(date.getTime()+(days*24*60*60*1000));
-		var expires = "; expires="+date.toGMTString();
-	}
-	else var expires = "";
-	document.cookie = name+"="+value+expires+"; path=/";
-}
-
-function readCookie(name) {
-	var nameEQ = name + "=";
-	var ca = document.cookie.split(';');
-	for(var i=0;i < ca.length;i++) {
-		var c = ca[i];
-		while (c.charAt(0)==' ') c = c.substring(1,c.length);
-		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-	}
-	return null;
-}
-
-function eraseCookie(name) {
-	createCookie(name,"",-1);
-}
 
 var savecustom = function()
 {
@@ -256,9 +222,6 @@ var savecustom = function()
 	
 		
 	var res = ln1p1.concat(species, ln1p2, ln2, ln3, ln4, ln5p1, ln5p2, lnbr, ln6p1, ln6p2, lnbr, ln7p1, ln7p2, lnbr, ln8p1, ln8p2, lnbr, ln9p1, ln9p2, lnbr, ln10p1, ln10p2, lnbr, ln11, ln12p1, ln5p1, ln12p2, lnbr, ln6p1, ln13p2, lnbr, ln7p1, ln14p2, lnbr, ln8p1, ln15p2, lnbr, ln9p1, ln16p2, lnbr, ln10p1, ln17p2, lnbr, ln11, ln19p1, nature, lnen, ln20p1, ability, lnen, ln21p1, item, lnen, ln22, lnmv, lnen);
-  	if(SETDEX_CUSTOM[species] == null)
-  		SETDEX_CUSTOM[species] = {}
-  	SETDEX_CUSTOM[species]= customFormat
     document.getElementById("Output").innerHTML = res
 
 
