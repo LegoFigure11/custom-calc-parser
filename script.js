@@ -197,7 +197,29 @@ var savecustom = function()
     }
   }
   */
-
+  	customFormat = {
+  			"level": level, 
+  			"evs": {
+  				"hp": EVs[0],
+  				"at": EVs[1],
+  				"df": EVs[2],
+  				"sa": EVs[3],
+  				"sd": EVs[4],
+  				"sp": EVs[5],
+  			},
+  			"ivs": {
+  				"hp": IVs[0],
+  				"at": IVs[1],
+  				"df": IVs[2],
+  				"sa": IVs[3],
+  				"sd": IVs[4],
+  				"sp": IVs[5],
+  			},
+  			"nature": nature,
+  			"ability": ability,
+  			"item": item,
+  			"moves": moves,
+  		}
   
 		var ln5p2 = EVs[0]
 		var ln6p2 = EVs[1]
