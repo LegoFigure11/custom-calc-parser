@@ -157,10 +157,10 @@ var savecustom = function()
 
 			}
 			
-			var move1 = moves.split(",")[0]
-			var move2 = moves.split(",")[1]
-			var move3 = moves.split(",")[2]
-			var move4 = moves.split(",")[3]
+			var move1 = string.split(",")[0]
+			var move2 = string.split(",")[1]
+			var move3 = string.split(",")[2]
+			var move4 = string.split(",")[3]
 
 		}
 	}
