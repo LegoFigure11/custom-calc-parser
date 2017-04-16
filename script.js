@@ -50,6 +50,7 @@ var savecustom = function()
 	var ln21p1 = '      "item": "'
 	var ln22 = '      "moves": [ \n'
 	var lnmv = '        "'
+	var movarray = new Array()
 	
 
 	/*	Pokemon Showdown Export Format
@@ -150,17 +151,16 @@ var savecustom = function()
 				var nextMove = lines[i].substring(lines[i].indexOf(' ') + 1).trim()
 				 nextMove = nextMove.replace('[', '')
 				 nextMove = nextMove.replace(']', '')
-				 moves.push(nextMove)
+				 movarray.push(nextMove)
 				
 
 		
 
 			}
-			var movarr = new Array(moves)
-			var move1 = movarr.split(",")[0]
-			var move2 = movarr.split(",")[1]
-			var move3 = movarr.split(",")[2]
-			var move4 = movarr.split(",")[3]
+			var move1 = movarray.split(",")[0]
+			var move2 = movarray.split(",")[1]
+			var move3 = movarray.split(",")[2]
+			var move4 = movarray.split(",")[3]
 
 		}
 	}
