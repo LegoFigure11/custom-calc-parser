@@ -146,8 +146,7 @@ var savecustom = function()
 			}
 			if(lines[i].indexOf("- ") != -1){ //if there is a move in this line
 				var move1 = lines[i].substring(lines[i].indexOf(' ') + 1).trim()
-				var move2 = move1.replace('[', '')
-				move2 = move1.replace(']', '')
+
 			}
 
 		}
