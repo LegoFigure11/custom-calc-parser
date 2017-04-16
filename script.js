@@ -152,13 +152,15 @@ var savecustom = function()
 				 nextMove = nextMove.replace(']', '')
 				 moves.push(nextMove)
 				
+
+		
+
+			}
+			
 			var move1 = moves.split(",")[0]
 			var move2 = moves.split(",")[1]
 			var move3 = moves.split(",")[2]
 			var move4 = moves.split(",")[3]
-		
-
-			}
 
 		}
 	}
