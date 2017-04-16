@@ -19,7 +19,7 @@ var showdownFormes = [["Kyurem-White", "Kyurem-W"],
 
 var savecustom = function()
 {
-	//first, to parse it all from the PS format
+
 	var string = document.getElementById('customMon').value
 	var lines = string.split('\n')
 	var species = "";
@@ -35,13 +35,13 @@ var savecustom = function()
 	var ln2 = '    "Set Name": { \n'
 	var ln3 = '      "level": 50, \n'
 	var ln4 = '      "evs": { \n'
-	var ln5p1 = '              "hp": '
+	var ln5p1 = '        "hp": '
 	var lnbr = '\n'
-	var ln6p1 = '              "at": '
-	var ln7p1 = '              "df": '
-	var ln8p1 = '              "sa": '
-	var ln9p1 = '              "sd": '
-	var ln10p1 = '              "se": '
+	var ln6p1 = '        "at": '
+	var ln7p1 = '        "df": '
+	var ln8p1 = '        "sa": '
+	var ln9p1 = '        "sd": '
+	var ln10p1 = '        "se": '
 	var ln12p1 = '      "ivs": { \n'
 	var ln11 = '      }, \n'
 	var ln19p1 = '      "nature": "'
@@ -55,22 +55,7 @@ var savecustom = function()
 	var ln3l = '      ] \n'
 	var ln2l = '    } \n'
 	var lnl = '  }'
-	
 
-	/*	Pokemon Showdown Export Format
-0	Nickname (Species) @ Item
-1	Ability: Name
-2	Level: #
-3	EVs: # Stat / # Stat / # Stat
-4	Serious Nature
-5	IVs: # Stat
-6	- Move Name
-7	- Move Name
-8	- Move Name
-9	- Move Name
-	*/
-
-	//geting rid of gender identities (lel)
 	if(lines[0].indexOf('(M)') != -1)
 	{
 		lines[0] = lines[0].substring(0, lines[0].indexOf('(M)') - 1) + 
@@ -144,9 +129,7 @@ var savecustom = function()
 						IVs[5] = parseInt(ivListElements[0])
 				}
 
-			}
-
-			    
+			}    
 			if(lines[i].indexOf("Nature") != -1) //if nature is in this line
 			{
 				nature = lines[i].split(' ')[0].trim()
@@ -171,56 +154,6 @@ var savecustom = function()
 
 		}
 	}
-
-	//now, to save it
-	/* Sample Calculator Format:
-  "Yanmega": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 0,
-        "at": 0,
-        "df": 0,
-        "sa": 252,
-        "sd": 4,
-        "sp": 252
-      },
-      "nature": "Modest",
-      "ability": "",
-      "item": "",
-      "moves": [
-        "Air Slash",
-        "Bug Buzz",
-        "Giga Drain",
-        "Hidden Power Ice"
-      ]
-    }
-  }
-  */
-  	customFormat = {
-  			"level": level, 
-  			"evs": {
-  				"hp": EVs[0],
-  				"at": EVs[1],
-  				"df": EVs[2],
-  				"sa": EVs[3],
-  				"sd": EVs[4],
-  				"sp": EVs[5],
-  			},
-  			"ivs": {
-  				"hp": IVs[0],
-  				"at": IVs[1],
-  				"df": IVs[2],
-  				"sa": IVs[3],
-  				"sd": IVs[4],
-  				"sp": IVs[5],
-  			},
-  			"nature": nature,
-  			"ability": ability,
-  			"item": item,
-  			"moves": moves,
-  		}
-  
 		var ln5p2 = EVs[0]
 		var ln6p2 = EVs[1]
 		var ln7p2 = EVs[2]
@@ -233,8 +166,6 @@ var savecustom = function()
 		var ln15p2 = IVs[3]
 		var ln16p2 = IVs[4]
 		var ln17p2 = IVs[5]	
-
-
 		
 	var res = ln1p1.concat(species, ln1p2, ln2, ln3, ln4, ln5p1, ln5p2, lnbr, ln6p1, ln6p2, lnbr, ln7p1, ln7p2, lnbr, ln8p1, ln8p2, lnbr, ln9p1, ln9p2, lnbr, ln10p1, ln10p2, lnbr, ln11, ln12p1, ln5p1, ln12p2, lnbr, ln6p1, ln13p2, lnbr, ln7p1, ln14p2, lnbr, ln8p1, ln15p2, lnbr, ln9p1, ln16p2, lnbr, ln10p1, ln17p2, lnbr, ln11, ln19p1, nature, lnen, ln20p1, ability, lnen, ln21p1, item, lnen, ln22, lnmv, move1, lnen, lnmv, move2, lnen, lnmv, move3, lnen, lnmv, move4, lnenl, ln3l, ln2l, lnl);
     document.getElementById("Output").innerHTML = res
