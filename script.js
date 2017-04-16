@@ -218,7 +218,8 @@ var savecustom = function()
 		var ln15p2 = IVs[3]
 		var ln16p2 = IVs[4]
 		var ln17p2 = IVs[5]
-		var move1 = moves.substring(0, moves.indexOf(',')).trim
+		var str = moves
+		var move1 = str.substring(0, str.indexOf(',')).trim
 
 	
 		
