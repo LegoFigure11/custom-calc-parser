@@ -50,7 +50,11 @@ var savecustom = function()
 	var ln21p1 = '      "item": "'
 	var ln22 = '      "moves": [ \n'
 	var lnmv = '        "'
+	var lnenl = ''" \n'
 	var movarray = new Array()
+	var ln3l = '      ] \n'
+	var ln2l = '    } \n'
+	var lnl = '  }'
 	
 
 	/*	Pokemon Showdown Export Format
@@ -194,30 +198,7 @@ var savecustom = function()
   }
   */
 
-  	
-  	customFormat = {
-  			"level": level, 
-  			"evs": {
-  				"hp": EVs[0],
-  				"at": EVs[1],
-  				"df": EVs[2],
-  				"sa": EVs[3],
-  				"sd": EVs[4],
-  				"sp": EVs[5],
-  			},
-  			"ivs": {
-  				"hp": IVs[0],
-  				"at": IVs[1],
-  				"df": IVs[2],
-  				"sa": IVs[3],
-  				"sd": IVs[4],
-  				"sp": IVs[5],
-  			},
-  			"nature": nature,
-  			"ability": ability,
-  			"item": item,
-  			"moves": moves,
-  		}
+  
 		var ln5p2 = EVs[0]
 		var ln6p2 = EVs[1]
 		var ln7p2 = EVs[2]
@@ -233,7 +214,7 @@ var savecustom = function()
 
 
 		
-	var res = ln1p1.concat(species, ln1p2, ln2, ln3, ln4, ln5p1, ln5p2, lnbr, ln6p1, ln6p2, lnbr, ln7p1, ln7p2, lnbr, ln8p1, ln8p2, lnbr, ln9p1, ln9p2, lnbr, ln10p1, ln10p2, lnbr, ln11, ln12p1, ln5p1, ln12p2, lnbr, ln6p1, ln13p2, lnbr, ln7p1, ln14p2, lnbr, ln8p1, ln15p2, lnbr, ln9p1, ln16p2, lnbr, ln10p1, ln17p2, lnbr, ln11, ln19p1, nature, lnen, ln20p1, ability, lnen, ln21p1, item, lnen, ln22, lnmv, move1, lnen, lnmv, move2, lnen, lnmv, move3, lnen, lnmv, move4, lnen);
+	var res = ln1p1.concat(species, ln1p2, ln2, ln3, ln4, ln5p1, ln5p2, lnbr, ln6p1, ln6p2, lnbr, ln7p1, ln7p2, lnbr, ln8p1, ln8p2, lnbr, ln9p1, ln9p2, lnbr, ln10p1, ln10p2, lnbr, ln11, ln12p1, ln5p1, ln12p2, lnbr, ln6p1, ln13p2, lnbr, ln7p1, ln14p2, lnbr, ln8p1, ln15p2, lnbr, ln9p1, ln16p2, lnbr, ln10p1, ln17p2, lnbr, ln11, ln19p1, nature, lnen, ln20p1, ability, lnen, ln21p1, item, lnen, ln22, lnmv, move1, lnen, lnmv, move2, lnen, lnmv, move3, lnen, lnmv, move4, lnenl, ln3l, ln2l, lnl);
     document.getElementById("Output").innerHTML = res
 
 
