@@ -149,7 +149,7 @@ var savecustom = function()
 				 nextMove = nextMove.replace('[', '')
 				 nextMove = nextMove.replace(']', '')
 				 moves.push(nextMove)
-				var move1 = moves[i].substring(0, moves[i].indexOf(',')).trim
+		
 
 			}
 
@@ -218,6 +218,7 @@ var savecustom = function()
 		var ln15p2 = IVs[3]
 		var ln16p2 = IVs[4]
 		var ln17p2 = IVs[5]
+		var move1 = moves.substring(0, moves.indexOf(',')).trim
 
 	
 		
