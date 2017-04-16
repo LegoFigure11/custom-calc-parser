@@ -149,7 +149,7 @@ var savecustom = function()
 				 nextMove = nextMove.replace('[', '')
 				 nextMove = nextMove.replace(']', '')
 				 moves.push(nextMove)
-				var move1 = moves[i].subtring(0, moves[i].indexOf(',')).trim
+				var move1 = moves[i].substring(0, moves[i].indexOf(',')).trim
 
 			}
 
