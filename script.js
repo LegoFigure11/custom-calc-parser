@@ -154,7 +154,7 @@ var savecustom = function()
 
 		}
 	}
-		if IVs[0] == "31"
+		if IVs[0] = 31
 		{
 			var hpiv = ""
 		else var hpiv = ln5p1.concat(IVs[0])
