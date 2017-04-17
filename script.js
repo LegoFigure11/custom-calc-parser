@@ -157,7 +157,7 @@ var savecustom = function()
 		    {
 		    var ln2p2 = lines[0].substring(0, lines[0].indexOf('(')).trim()
 		    }
-		    else var ln2p2 = species
+		    else var ln2p2 = "My custom set"
 		}
 	}
 
