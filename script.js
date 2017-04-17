@@ -177,6 +177,45 @@ var savecustom = function()
 		var ln16p2 = IVs[4]
 		var ln17p2 = IVs[5]
 		
+		
+		if (EVs[0] == 0)
+		{
+			var hpev = ""
+		}
+		else var hpev = ln5p1.concat(EVs[0], lnbr)
+		
+		if (EVs[1] == 0)
+		{
+			var atev = ""
+		}
+		else var atev = ln6p1.concat(EVs[1], lnbr)
+		
+		if (EVs[2] == 0)
+		{
+			var deev = ""
+		}
+		else var deev = ln7p1.concat(EVs[2], lnbr)
+		
+		if (EVs[3] == 0)
+		{
+			var saev = ""
+		}
+		else var saev = ln8p1.concat(EVs[3], lnbr)
+		
+		if (EVs[4] == 0)
+		{
+			var sdev = ""
+		}
+		else var sdev = ln9p1.concat(EVs[4], lnbr)
+		
+		if (EVs[5] == 0)
+		{
+			var spev = ""
+		}
+		else var spev = ln10p1.concat(EVs[5], lnbr)
+		
+		
+		
 		if (IVs[0] == 31)
 		{
 			var hpiv = ""
@@ -214,7 +253,7 @@ var savecustom = function()
 		else var spiv = ln10p1.concat(IVs[5], lnbr)
 		
 		
-	var res = ln1p1.concat(species, ln1p2, ln2p1, ln2p2, ln2p3, ln3, ln4, ln5p1, ln5p2, lnbr, ln6p1, ln6p2, lnbr, ln7p1, ln7p2, lnbr, ln8p1, ln8p2, lnbr, ln9p1, ln9p2, lnbr, ln10p1, ln10p2, lnbr, ln11, ln12p1, hpiv, ativ, deiv, saiv, sdiv, spiv, ln11v2, ln19p1, nature, lnen, ln20p1, ability, lnen, ln21p1, item, lnen, ln22, lnmv, move1, lnen, lnmv, move2, lnen, lnmv, move3, lnen, lnmv, move4, lnenl, ln3l, ln2l, lnl);
+	var res = ln1p1.concat(species, ln1p2, ln2p1, ln2p2, ln2p3, ln3, ln4, hpev, atev, deev, saev, sdev, spev, ln11, ln12p1, hpiv, ativ, deiv, saiv, sdiv, spiv, ln11v2, ln19p1, nature, lnen, ln20p1, ability, lnen, ln21p1, item, lnen, ln22, lnmv, move1, lnen, lnmv, move2, lnen, lnmv, move3, lnen, lnmv, move4, lnenl, ln3l, ln2l, lnl);
     document.getElementById("Output").innerHTML = res
 
 
