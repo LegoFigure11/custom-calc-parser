@@ -1,3 +1,5 @@
+// 90% of this code is shamelessly stolen from Jake White's VGC calc, so huge shoutouts to him!
+
 var showdownFormes = [["Kyurem-White", "Kyurem-W"],
 ["Kyurem-Black", "Kyurem-B"],
 ["Rotom-Wash", "Rotom-W"],
