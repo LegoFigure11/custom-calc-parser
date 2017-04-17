@@ -155,7 +155,7 @@ var savecustom = function()
 			
 		    if (lines[0].indexOf('(') != -1)
 		    {
-		    var ln2p2 = lines[0].substring(0, lines[0].indexOf('(').trim()
+		    var ln2p2 = lines[0].substring(0, lines[0].indexOf('(')).trim()
 		    }
 		    else var ln2p2 = species
 		}
