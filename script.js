@@ -58,7 +58,7 @@ var savecustom = function()
 	var movarray = new Array()
 	var ln3l = '      ] \n'
 	var ln2l = '    } \n'
-	var lnl = '  }'
+	var lnl = '  },'
 	var ln12p1 = ""
 	var ln11v2 = ""
 
