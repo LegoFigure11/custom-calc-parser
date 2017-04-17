@@ -55,6 +55,8 @@ var savecustom = function()
 	var ln3l = '      ] \n'
 	var ln2l = '    } \n'
 	var lnl = '  }'
+	var ln12p1 = ""
+	var ln11v2 = ""
 
 	if(lines[0].indexOf('(M)') != -1)
 	{
@@ -130,8 +132,7 @@ var savecustom = function()
 					else if(ivListElements[1] == "Spe")
 						IVs[5] = parseInt(ivListElements[0])
 				}
-				else var ln12p1 = ""
-				var ln11v2 = ""
+
 
 			}    
 			if(lines[i].indexOf("Nature") != -1) //if nature is in this line
