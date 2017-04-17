@@ -109,8 +109,10 @@ var savecustom = function()
 				}
 
 			}
-			if(lines[i].indexOf("IVs") != -1) //if EVs are in this line
+			if(lines[i].indexOf("IVs") != -1) //if IVs are in this line
 			{
+				var ln12p1 = '      "ivs": { \n'
+				var ln11v2 = '      }, \n'
 				ivList = lines[i].split(':')[1].split('/'); //splitting it into a list of " # Stat "
 				for(var j = 0; j < ivList.length; ++j){
 					ivList[j] = ivList[j].trim();
@@ -128,6 +130,8 @@ var savecustom = function()
 					else if(ivListElements[1] == "Spe")
 						IVs[5] = parseInt(ivListElements[0])
 				}
+				else var ln12p1 = ""
+				var ln11v2 = ""
 
 			}    
 			if(lines[i].indexOf("Nature") != -1) //if nature is in this line
@@ -198,7 +202,7 @@ var savecustom = function()
 		}
 		else var spiv = ln10p1.concat(IVs[5], lnbr)
 		
-	var res = ln1p1.concat(species, ln1p2, ln2, ln3, ln4, ln5p1, ln5p2, lnbr, ln6p1, ln6p2, lnbr, ln7p1, ln7p2, lnbr, ln8p1, ln8p2, lnbr, ln9p1, ln9p2, lnbr, ln10p1, ln10p2, lnbr, ln11, ln12p1, hpiv, ativ, deiv, saiv, sdiv, spiv, ln11, ln19p1, nature, lnen, ln20p1, ability, lnen, ln21p1, item, lnen, ln22, lnmv, move1, lnen, lnmv, move2, lnen, lnmv, move3, lnen, lnmv, move4, lnenl, ln3l, ln2l, lnl);
+	var res = ln1p1.concat(species, ln1p2, ln2, ln3, ln4, ln5p1, ln5p2, lnbr, ln6p1, ln6p2, lnbr, ln7p1, ln7p2, lnbr, ln8p1, ln8p2, lnbr, ln9p1, ln9p2, lnbr, ln10p1, ln10p2, lnbr, ln11, ln12p1, hpiv, ativ, deiv, saiv, sdiv, spiv, ln11v2, ln19p1, nature, lnen, ln20p1, ability, lnen, ln21p1, item, lnen, ln22, lnmv, move1, lnen, lnmv, move2, lnen, lnmv, move3, lnen, lnmv, move4, lnenl, ln3l, ln2l, lnl);
     document.getElementById("Output").innerHTML = res
 
 
