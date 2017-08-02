@@ -157,9 +157,21 @@ var savecustom = function()
 			
 		    if (lines[0].indexOf('(') != -1)
 		    {
-		    var ln2p2 = lines[0].substring(0, lines[0].indexOf('(')).trim()
+			    if (document.getElementById('l100').checked) {
+			var nhb = " - NO HOLDS BARRED"
+			var ln2p2_b = lines[0].substring(0, lines[0].indexOf('(')).trim()
+			var ln2p2 = ln2p2_b.concat(nhb)
+			} else {
+			var ln2p2 = lines[0].substring(0, lines[0].indexOf('(')).trim()
+			}
 		    }
-		    else var ln2p2 = "set name"
+		    else {
+			    if (document.getElementById('l100').checked) {
+			var nhb = " - NO HOLDS BARRED"
+			var ln2p2_b = "set name"
+			var ln2p2 = ln2p2_b.concat(nhb)
+			} else {
+			var ln2p2 = "set name"
 		}
 	}
 
