@@ -37,7 +37,9 @@ var savecustom = function()
 	var ln2p1 = '    "'
 	var ln2p2 = ""
 	var ln2p3 = '": { \n'
-	var ln3 = '      "level": 50, \n'
+	if (document.getElementById('l100')).checked {
+	var ln3 = '      "level": 100, \n'
+	} else var ln3 = '      "level": 50, \n'
 	var ln4 = '      "evs": { \n'
 	var ln5p1 = '        "hp": '
 	var lnbr = '\n'
