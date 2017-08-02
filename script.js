@@ -173,6 +173,7 @@ var savecustom = function()
 			} else {
 			var ln2p2 = "set name"
 			}
+			}
 		}
 	}
 
