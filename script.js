@@ -157,7 +157,7 @@ var savecustom = function()
 		    if (lines[0].indexOf('(') != -1)
 		    {
 			    if (document.getElementById('l100').checked) {
-			var nhb = "NO HOLDS BARRED - "
+			var nhb = "NO HOLDS BARRED: "
 			var ln2p2_b = lines[0].substring(0, lines[0].indexOf('(')).trim()
 			var ln2p2 = nhb.concat(ln2p2_b)
 			} else {
@@ -166,7 +166,7 @@ var savecustom = function()
 		    }
 		    else {
 			    if (document.getElementById('l100').checked) {
-			var nhb = "NO HOLDS BARRED - "
+			var nhb = "NO HOLDS BARRED: "
 			var ln2p2_b = "set name"
 			var ln2p2 = nhb.concat(ln2p2_b)
 			} else {
