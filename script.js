@@ -172,6 +172,7 @@ var savecustom = function()
 			var ln2p2 = ln2p2_b.concat(nhb)
 			} else {
 			var ln2p2 = "set name"
+			}
 		}
 	}
 
