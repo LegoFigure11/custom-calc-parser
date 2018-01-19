@@ -1,5 +1,6 @@
 // 90% of this code is shamelessly stolen from Jake White's VGC calc, so huge shoutouts to him!
 
+
 var showdownFormes = [["Kyurem-White", "Kyurem-W"],
 ["Kyurem-Black", "Kyurem-B"],
 ["Rotom-Wash", "Rotom-W"],
@@ -17,7 +18,9 @@ var showdownFormes = [["Kyurem-White", "Kyurem-W"],
 ["Wormadan-Sandy", "Wormadan-G"],
 ["Wormadan-Trash", "Wormadan-S"],
 ["Groudon-Primal", "Groudon"],
-["Kyogre-Primal", "Kyogre"]];
+["Kyogre-Primal", "Kyogre"],
+["Necrozma-Dusk-Mane", "Necrozma-Dusk Mane"],
+["Necrozma-Dawn-Wings", "Necrozma-Dawn Wings"]];
 
 var savecustom = function()
 {
